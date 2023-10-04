@@ -1,0 +1,87 @@
+.icon-tg {
+    /* width: 50px;
+    height: 50px; */
+
+    fill: gray;
+    /* fill: black; */
+    
+    transition: 0.3s linear;
+}
+
+
+.icon-tg:hover {
+    /* fill: #2AABEE;  */
+    fill: hsl(200, 85%, 55%); 
+}
+
+
+
+
+
+
+
+
+
+
+
+.apple-path {
+    /* fill: none; */
+    fill: greenyellow;
+    fill-opacity: .2;
+        
+    stroke: brown;
+    stroke-width: 4px;
+    transition: all 1s ease-in-out;
+    /* stroke-dasharray: 30; */
+    /* stroke-dasharray: 40 20; */
+    /* stroke-dasharray: 40 20 10; */
+    stroke-dashoffset: 40;
+
+    /* для анимаяии */
+    /* stroke-dasharray: 1300;
+    stroke-dashoffset: 1300; */
+}
+.apple-svg:hover .apple-path{
+  /* stroke-dasharray: 20; */
+  /* stroke-dasharray: 40 10 20; */
+
+  /* для анимации */
+  /* stroke-dashoffset: 0; */
+}
+
+
+ 
+
+
+ /* квадратик с вращающейся рамкой  */
+ .spin {
+
+  /* сужение расширение узко */
+  /* stroke-dasharray: 40 50;
+  stroke-dashoffset: 20; */
+  
+  /* две полоски вращаются */
+    stroke-dasharray: 90;
+  stroke-dashoffset: 100;
+  animation: dash 2s infinite ease; 
+}
+
+@keyframes dash {
+  from,
+  to {
+      /* две полоски вращаются */
+    stroke-dashoffset: 710; 
+
+  /* сужение расширение узко */
+  /* stroke-dasharray: 40 50;
+  stroke-dashoffset: 20; */
+  }
+  50% {
+      /* две полоски вращаются */
+    stroke-dashoffset: 100; 
+
+     /* сужение расширение широко */
+  /* stroke-dasharray: 60 30;
+  stroke-dashoffset: 30; */
+  }
+}
